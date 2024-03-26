@@ -7,11 +7,7 @@ function StatsList({ stats }) {
   return (
     <ul className={styles.stats}>
       {keys.map(name => (
-        <StatsListItem
-          key={name}
-          name={name}
-          quantity={stats[name]}
-        ></StatsListItem>
+        <StatsListItem key={name} name={name} quantity={stats[name]} />
       ))}
     </ul>
   );
