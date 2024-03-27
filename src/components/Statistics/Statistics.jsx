@@ -1,20 +1,23 @@
 import { getRandomHexColor } from 'helper/randomColor';
+
+import StatisticsItem from './StatisticsItem';
+
 import styles from './Statistics.module.css';
 
 const Statistics = ({ title, stats }) => {
   return (
     <section className={styles.statistics}>
-      {title && <h2 className="title">Upload stats</h2>}
+      {title && <h2 className={styles.title}>Upload stats</h2>}
 
       <ul className={styles.statList}>
-        {stats.map(({ id, label, percentage }) => {
-          return (
-            <li key={id} className={styles.item}>
-              <span className="label">{label}</span>
-              <span className="percentage">{percentage}&#x25;</span>
-            </li>
-          );
-        })}
+        {stats.map(({ id, label, percentage }) => (
+          <StatisticsItem
+            key={id}
+            label={label}
+            percentage={percentage}
+            bgColor={getRandomHexColor()}
+          ></StatisticsItem>
+        ))}
       </ul>
     </section>
   );

@@ -5,6 +5,9 @@
   display: flex;
 }
 
-.item {
-  text-align: center;
+.title {
+  padding: 20px;
+  background-color: #fff;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
