@@ -1,5 +1,5 @@
 .profile {
-  margin: 0 auto;
+  margin: 0 auto 20px;
   padding-top: 20px;
   width: 300px;
   background-color: #fff;
@@ -14,6 +14,7 @@
 }
 .avatar {
   padding: 10px;
+  margin: 0 auto;
   border-radius: 50%;
   width: 100px;
   height: 100px;
@@ -32,30 +33,4 @@
 }
 .tag {
   margin-bottom: 12px;
-}
-.stats {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  list-style: none;
-  background-color: #f3f6f9;
-}
-.item {
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex-basis: calc(100% / 3);
-  min-height: 50px;
-  border: 1px solid #e5eaf1;
-}
-
-.label {
-  margin-bottom: 16px;
-  font-weight: 500;
-  opacity: 0.7;
-}
-
-.quantity {
-  font-weight: 700;
 }

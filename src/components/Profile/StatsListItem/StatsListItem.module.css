@@ -1,0 +1,20 @@
+.item {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-basis: calc(100% / 3);
+  min-height: 50px;
+  border: 1px solid #e5eaf1;
+}
+
+.label {
+  margin-bottom: 16px;
+  font-weight: 500;
+  text-transform: capitalize;
+  opacity: 0.7;
+}
+
+.quantity {
+  font-weight: 700;
+}

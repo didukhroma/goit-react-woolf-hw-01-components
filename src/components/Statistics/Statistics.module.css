@@ -1,0 +1,10 @@
+.statistics {
+  margin-bottom: 20px;
+}
+.statList {
+  display: flex;
+}
+
+.item {
+  text-align: center;
+}
